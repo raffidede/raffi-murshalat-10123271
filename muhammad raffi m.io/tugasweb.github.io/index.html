@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>toko bunga raffiflorist bandung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="w3.css">
+</head>
+<body>
+<div class="w3-container">
+  <img src="foto/banner toko.jpg" alt="header" style="height: 45%;width: 105%;">
+</div>
+<div class="w3-bar w3-pale-red">
+  <button class="w3-bar-item w3-button" onclick="Menu('Home')">Home</button>
+  <button class="w3-bar-item w3-button" onclick="Menu('bunga papan')">bunga papan</button>
+  <button class="w3-bar-item w3-button" onclick="Menu('handbucket')">hand bucket</button>
+  <button class="w3-bar-item w3-button" onclick="Menu('alamat')">alamat</button>
+  <button class="w3-bar-item w3-button" onclick="Menu('tanaman hias')">tanaman hias</button>  
+</div>
+<div id="Home" class="w3-container char">
+  <center>
+  <h2>selamat datang di toko raffiflorist!</h2>
+  @tokobungabandung_raffiflorist
+</div>
+<div id="bunga papan" class="w3-container char w3-animate-opacity" style="display:none">
+  <h2>bunga papan</h2>
+  <table>
+  <tr><td><img src="foto/bunga papan 1.jpg" width=300 height=350>
+      <td>bunga papan denga ukuran 2x3 dengan harga 650rb   
+    </td>      
+  </table>
+</div>
+<div id="handbucket" class="w3-container char w3-animate-opacity" style="display:none">
+  <h2>hand bucket</h2>
+  <table>
+  <tr><td rowspan=5><img src="foto/handbucket1.jpeg" width=300 height=300">
+      <td>hand bucket dengan harga 250rb
+  </table>
+</div>
+<div id="alamat" class="w3-container char w3-animate-opacity" style="display:none">
+  <h2>Tegalega Bandung, JL.Otto iskandardinata gerbang barat, Kelurahan Los 10, Ciateul, Kec. Regol, Kota Bandung, Jawa Barat 40252</h2>
+</div>
+<div id="tanaman hias" class="w3-container char w3-animate-opacity" style="display:none">
+  <h2>Danielle</h2>
+  <table>
+  <tr><td rowspan=5><img src="foto/tanaman hias.jpeg" width=300 height=350">
+      <td>Monstera merupakan tanaman hias keluarga talas yang viral karena keunikan bentuk daunnya. Sebagian daun Monstera dapat bolong-bolong seperti Monstera adansonii yang juga dikenal dengan janda bolong.Adapula Monstera variegata dengan percampuran warna hijau dan putih serta bentuk daun yang tidak beraturan
+  <tr><td>di bandrol dengan harga 250rb      
+  </table>
+</div>
+<script>
+  function Menu(Karakter) {
+    var i;
+    var x = document.getElementsByClassName("char");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(Karakter).style.display = "block";
+  }
+</script>
+</body>
+</html>
